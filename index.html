@@ -9,6 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
       crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -21,7 +22,6 @@
           </button>
 	  <div class="collapse navbar-collapse" id="navbar">
 	    <div class="navbar-nav ms-auto">
-	      <a class="nav-link active" href="#home">Home</a>
 	      <a class="nav-link active" href="#about">About</a>
 	      <a class="nav-link active" href="#projects">Projects</a>
 	      <a class="nav-link active" href="#resume">Resume</a>
@@ -33,19 +33,79 @@
     </header>
     <main>
       <section id="home">
-        <h2>Home</h2>
+	<h1>Welcome to My Portfolio</h1>
+        <p>Irene Ndiritu</p>
+	<p>Software Developer</p>
       </section>
       <section id="about">
-        <h2>About</h2>
+        <h1>About Me</h1>
+	<p>
+	  I'm Irene Ndiritu, a passionate software developer with 1 year of experience specializing in web development. 
+	  I'm dedicated to continuous learning and staying up-to-date with the latest technologies.
+	</p>
+	<div>
+	  <h2>Education</h2>
+	  <h3>ALX</h3>
+	  <span>Aug 2022 - Jan 2024</span>
+          <h4>Software Engineering Program</h4>
+	</div>
+	<div>
+	  <h2>Skills</h2>
+	  <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>Flask</li>
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+        <!-- Add more skills as needed -->
+          </ul>
+	</div>
       </section>
       <section id="projects">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
+	<div class="projects">
+	  <!-- project 1 -->
+	  <div class="project">
+
+	    <!-- project 1 image -->
+	    <div class="project-image">
+	      <img src="">
+	    </div>
+
+	    <!-- project 1 data -->
+	    <div class="project-info">
+	      <h3>BrevityLink</h3>
+	      <p>
+	        A  Flask-based URL shortener with user 
+		authentication for a personalized experience. Implemented 
+		features such as URL shortening, user registration, login, table 
+		view, and deletion of entries. Utilized Python, Flask, HTML, CSS, 
+		Jinja2, Bootstrap and SQLAlchemy technologies.
+	      </p>
+              <a href="https://github.com/Irene1c/BrevityLink" target="_blank"><img src="github_icon.png" alt="view project"></a>
+	    </div>
+	  </div>
+
+	</div>
       </section>
       <section id="resume">
-        <h2>Resume</h2>
+        <h1>Resume</h1>
+	<div>
+	  <!-- set URL or path to downloadable resume file -->
+	  <a href="path/to/your/file.pdf" target="_blank" download>Download Resume</a>
+	</div>
       </section>
       <section id="contact">
-        <h2>Contact</h2>
+        <h1>Get in touch</h1>
+	<div>
+	  <p>Connect with me on LinkedIn:</p>
+	  <!-- set link to your linkedin profile -->
+          <a href="https://www.linkedin.com/in/ire1" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn Profile"></a>
+	</div>
       </section>
     </main>
     <footer>
