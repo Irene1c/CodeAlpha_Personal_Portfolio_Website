@@ -1,0 +1,55 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #ffdc80);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid a {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-nav a:hover {
+  background-color: #333;
+  border-radius: 25px;
+  transition: background-color 1s;
+}
+
+#resume a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  outline: 3px double #fff;
+}
+
+#resume a:hover {
+  background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
