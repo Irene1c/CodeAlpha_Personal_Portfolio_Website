@@ -35,6 +35,11 @@ body {
   transition: background-color 1s;
 }
 
+.skills-list li img, .project-info a img, #contact a img {
+    width: 60px;
+    height: 60px;
+}
+
 #resume a {
   text-decoration: none;
   color: #fff;
