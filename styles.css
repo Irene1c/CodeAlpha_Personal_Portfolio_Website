@@ -13,8 +13,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #ffdc80);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #485460, #5dade2, #34495e, #85c1e9);
+  background-size: 250% 250%;
   animation: gradientAnimation 5s ease infinite;
   display: flex;
   flex-direction: column;
@@ -35,9 +35,68 @@ body {
   transition: background-color 1s;
 }
 
+#home {
+  height: calc(100vh - 56px); /* Set the height of the home section */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  height: calc(100% - 100px);
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction .name {
+  font-size: 3vw;
+}
+
+.introduction .name span {
+  color: #e0ffff;
+  font-variant: small-caps;
+}
+
+.introduction .title {
+  font-size: 2vw;
+}
+
+/* Adjust font size for smaller screens using media queries */
+@media (max-width: 768px) {
+  .introduction .name {
+      font-size: 5vw;
+  }
+  .introduction .title {
+      font-size: 4vw;
+  }
+}
+
+.introduction .title span {
+  color: #B2BEB5;
+  font-variant: small-caps;
+}
+
+.scroll {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px; /*space between button and bottom */
+}
+
 .skills-list li img, .project-info a img, #contact a img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 #resume a {
@@ -53,8 +112,8 @@ body {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
