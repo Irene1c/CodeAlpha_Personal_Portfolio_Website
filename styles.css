@@ -139,6 +139,27 @@ h2 {
   max-width: 1000px;
 }
 
+.project-image {
+  display: flex;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .project-image img {
+      width: 100%;
+  }
+}
+
+.project-info h3 {
+  font-weight: bold;
+  font-style: italic;
+  padding: 20px 0px;
+}
+
 .skills-list li img, .project-info a img, #contact a img {
   width: 60px;
   height: 60px;
