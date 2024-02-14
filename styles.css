@@ -119,6 +119,16 @@ h2 {
   max-width: 900px;
 }
 
+.education {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education h3, h4 {
+  font-weight: bold;
+}
+
 #projects .project {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
@@ -144,6 +154,11 @@ h2 {
 
 #resume a:hover {
   background-color: #333;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
