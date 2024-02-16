@@ -119,10 +119,10 @@ h2 {
   max-width: 900px;
 }
 
-.education {
+.education-title, .education-content {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .education h3, h4 {
